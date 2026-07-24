@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+  <service>
+    <engineName>Vybe Tone</engineName>
+    <engineLink>https://vibetonemusic.com</engineLink>
+    <homePageLink>https://vibetonemusic.com</homePageLink>
+    <apis>
+      <api name="WordPress" blogID="1" preferred="false" apiLink="https://vibetonemusic.com/xmlrpc.php" />
+    </apis>
+  </service>
+</rsd>

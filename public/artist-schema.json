@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MusicArtist",
+  "name": "Vybe Tone",
+  "url": "https://vibetonemusic.com",
+  "sameAs": [
+    "https://youtube.com/@vybetone",
+    "https://www.tiktok.com/@vybe_tone",
+    "https://www.instagram.com/vybe_tone",
+    "https://www.facebook.com/share/1BsBfC6As9/",
+    "https://open.spotify.com/artist/vybetone"
+  ],
+  "image": "https://vibetonemusic.com/og-image.jpg",
+  "description": "Kenyan Drill, Afro Hip Hop & Dancehall Artist from Nairobi. Music Without Limits.",
+  "genre": ["Drill", "Afro Hip Hop", "Dancehall", "Afrobeat"],
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Nairobi, Kenya"
+  },
+  "musicByArtist": {
+    "@type": "MusicRecording",
+    "name": "Vybe Tone Music"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "booking",
+    "email": "booking@vibetonemusic.com"
+  }
+}

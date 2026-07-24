@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-gradient-to-b from-dark-900 via-dark-950 to-dark-950;
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-lg;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-primary to-accent-gold text-dark-950 font-bold rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-secondary text-secondary font-bold rounded-full transition-all duration-300 hover:bg-secondary hover:text-dark-950 hover:shadow-lg hover:shadow-secondary/50;
+  }
+
+  .btn-ghost {
+    @apply px-6 py-3 border border-white/30 text-white font-medium rounded-full transition-all duration-300 hover:bg-white/10 hover:border-white/50;
+  }
+
+  .hero-title {
+    @apply text-5xl md:text-7xl font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-black uppercase tracking-wide mb-6;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:transform hover:scale-105 hover:shadow-xl hover:shadow-primary/20;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.8);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FFD700 0%, #00D9FF 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FFC700 0%, #00B8D4 100%);
+}

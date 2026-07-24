@@ -1,0 +1,43 @@
+{
+  "name": "vybetone",
+  "version": "1.0.0",
+  "description": "Official website for Vybe Tone - Kenyan Drill, Afro Hip Hop & Dancehall Artist",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^14.2.3",
+    "typescript": "^5.4.2",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "framer-motion": "^10.16.18",
+    "firebase": "^10.8.0",
+    "next-image-export-optimizer": "^1.18.0",
+    "react-icons": "^5.0.1",
+    "zustand": "^4.4.1",
+    "react-hot-toast": "^2.4.1",
+    "axios": "^1.6.5",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.2.3",
+    "prettier": "^3.2.4"
+  }
+}
